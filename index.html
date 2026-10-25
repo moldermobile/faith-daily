@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Faith Daily · 5 quiet minutes with God</title>
+<meta name="theme-color" content="#2B1E14">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F1E6;--card:#FFFDF8;--ink:#2B1E14;--soft:#6B5A4A;--gold:#B8862F;--gold2:#E2B862;--line:#E8DCC8;--deep:#2B1E14;--green:#4F7A4A;--r:18px}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--bg)}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);line-height:1.55;padding-bottom:calc(78px + env(safe-area-inset-bottom));min-height:100vh}
+h1,h2,h3,.serif{font-family:Lora,Georgia,serif}
+.wrap{max-width:560px;margin:0 auto;padding:0 16px}
+header.top{background:linear-gradient(160deg,#2B1E14,#4A3322 60%,#6B4A2C);color:#FBF3E4;padding:calc(18px + env(safe-area-inset-top)) 0 26px;border-radius:0 0 28px 28px}
+header.top .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.04em}
+header.top .brand img{width:34px;height:34px;border-radius:9px}
+header.top .hi{margin-top:14px;font-size:14px;opacity:.85}
+header.top h1{font-size:26px;line-height:1.2;margin-top:4px}
+.streak{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);border-radius:99px;padding:6px 12px;font-size:13px;margin-top:12px}
+main{padding-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;margin-bottom:14px;box-shadow:0 8px 24px -18px rgba(43,30,20,.35)}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.verse{font-family:Lora,serif;font-size:21px;line-height:1.45;margin:8px 0 6px;font-style:italic}
+.ref{font-size:13px;color:var(--soft);font-weight:600}
+.card h2{font-size:20px;margin:6px 0 8px}
+.card p{color:#3D2E22}
+.prayer{background:#F3E8D3;border-radius:14px;padding:14px;margin-top:12px;font-family:Lora,serif;font-style:italic}
+.action{display:flex;gap:10px;align-items:flex-start;margin-top:12px;font-size:14px;color:var(--soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:14px;padding:13px 18px;font:600 15px Inter,sans-serif;cursor:pointer;background:var(--deep);color:#FBF3E4;width:100%}
+.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2B1E14}
+.btn.ghost{background:transparent;border:1.5px solid var(--line);color:var(--ink)}
+.row{display:flex;gap:10px}.row>*{flex:1}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;text-align:left;cursor:pointer;font:inherit;color:inherit}
+.tile .ic{font-size:24px}.tile b{display:block;margin-top:6px;font-size:15px}.tile small{color:var(--soft);font-size:12.5px}
+.list .it{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid var(--line);cursor:pointer}
+.list .it:last-child{border-bottom:0}
+.list .it .ic{width:40px;height:40px;border-radius:12px;background:#F3E8D3;display:flex;align-items:center;justify-content:center;font-size:20px;flex:none}
+.list .it b{display:block;font-size:15px}.list .it small{color:var(--soft);font-size:12.5px}
+.chk{width:24px;height:24px;border-radius:8px;border:2px solid var(--line);flex:none;display:flex;align-items:center;justify-content:center;font-size:14px}
+.chk.on{background:var(--green);border-color:var(--green);color:#fff}
+nav.bar{position:fixed;left:0;right:0;bottom:0;background:#FFFDF8;border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:8px 6px calc(8px + env(safe-area-inset-bottom));z-index:20}
+nav.bar button{background:none;border:0;font:600 11px Inter,sans-serif;color:var(--soft);display:flex;flex-direction:column;align-items:center;gap:3px;padding:4px 8px;cursor:pointer}
+nav.bar button span{font-size:21px}nav.bar button.on{color:var(--gold)}
+.view{display:none}.view.on{display:block}
+.back{background:none;border:0;font:600 14px Inter;color:var(--gold);margin:4px 0 12px;cursor:pointer}
+.art{font-size:16px}.art h3{font-size:19px;margin:18px 0 6px}.art p{margin:8px 0}.art ul,.art ol{margin:8px 0 8px 20px}
+.pill{display:inline-block;background:#F3E8D3;border-radius:99px;padding:4px 10px;font-size:12px;margin:2px 4px 2px 0;color:var(--soft)}
+.flash{min-height:180px;display:flex;flex-direction:column;justify-content:center;text-align:center;cursor:pointer}
+.opt{display:block;width:100%;text-align:left;background:var(--card);border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;margin:8px 0;font:500 15px Inter;cursor:pointer;color:var(--ink)}
+.opt.ok{border-color:var(--green);background:#E7F0E4}.opt.no{border-color:#B5523B;background:#F6E2DC}
+textarea,input[type=text]{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:12px;font:15px Inter;background:#fff;color:var(--ink)}
+.muted{color:var(--soft);font-size:13.5px}
+.install{background:linear-gradient(135deg,#F3E8D3,#FFF7E8);border:1px dashed var(--gold)}
+audio{width:100%;margin-top:8px}
+.toast{position:fixed;left:50%;bottom:92px;transform:translateX(-50%);background:var(--deep);color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;opacity:0;transition:.3s;z-index:40}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="brand"><img src="icon-192.png" alt="">FAITH DAILY</div>
+  <div class="hi" id="hi">Good morning</div>
+  <h1 id="htitle">Your quiet time with God</h1>
+  <div class="streak" id="streak">🔥 0-day streak · no guilt, no catch-up</div>
+</div></header>
+
+<main class="wrap">
+<!-- HOY -->
+<section class="view on" id="v-today"></section>
+<!-- LO QUE CARGÁS -->
+<section class="view" id="v-carry"></section>
+<!-- RECORRIDOS -->
+<section class="view" id="v-journeys"></section>
+<!-- BIBLIOTECA -->
+<section class="view" id="v-library"></section>
+<!-- MÁS -->
+<section class="view" id="v-more"></section>
+<!-- DETALLE -->
+<section class="view" id="v-detail"></section>
+</main>
+
+<nav class="bar">
+  <button data-v="today" class="on"><span>☀️</span>Today</button>
+  <button data-v="carry"><span>🤍</span>Carrying</button>
+  <button data-v="journeys"><span>🧭</span>Journeys</button>
+  <button data-v="library"><span>📚</span>Library</button>
+  <button data-v="more"><span>✨</span>More</button>
+</nav>
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script>
+const $=s=>document.querySelector(s); const D=window.FD;
+const S={get(k,d){try{return JSON.parse(localStorage.getItem('fd_'+k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem('fd_'+k,JSON.stringify(v))}catch(e){}}};
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');setTimeout(()=>t.classList.remove('on'),1800)}
+const hoyKey=()=>new Date().toISOString().slice(0,10);
+if(!S.get('start')) S.set('start',hoyKey());
+function diaIndex(){const a=new Date(S.get('start')),b=new Date(hoyKey());return Math.max(0,Math.round((b-a)/864e5))}
+function racha(){const done=S.get('done',[]);let n=0,d=new Date();for(;;){const k=d.toISOString().slice(0,10);if(done.includes(k)){n++;d.setDate(d.getDate()-1)}else if(n===0&&k===hoyKey()){d.setDate(d.getDate()-1)}else break}return n}
+function header(){const h=new Date().getHours();$('#hi').textContent=h<12?'Good morning':h<18?'Good afternoon':'Good evening';const r=racha();$('#streak').textContent=(r?`🔥 ${r}-day streak`:'🔥 Start your streak today')+' · no guilt, no catch-up'}
+let ultima='today';
+function ir(v,push=true){document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));$('#v-'+v).classList.add('on');document.querySelectorAll('nav.bar button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(v!=='detail')ultima=v;window.scrollTo(0,0);if(R[v])R[v]()}
+document.querySelectorAll('nav.bar button').forEach(b=>b.onclick=()=>ir(b.dataset.v));
+function detalle(html){$('#v-detail').innerHTML=`<button class="back" onclick="ir(ultima)">‹ Back</button>`+html;ir('detail')}
+
+const R={};
+R.today=()=>{
+  const i=diaIndex()%D.devotionals.length, d=D.devotionals[i]; const hecho=S.get('done',[]).includes(hoyKey());
+  $('#htitle').textContent='Day '+(diaIndex()+1)+' · '+d.title;
+  $('#v-today').innerHTML=`
+  <div class="card"><span class="tag">Verse of the day</span>
+    <div class="verse">“${esc(d.verse)}”</div><div class="ref">${d.ref} (KJV)</div>
+    <h2>${esc(d.title)}</h2><p>${esc(d.reflection)}</p>
+    <div class="prayer">🙏 ${esc(d.prayer)}</div>
+    <div class="action">✅ <span><b>Today:</b> ${esc(d.action)}</span></div>
+    <div class="row" style="margin-top:16px"><button class="btn ${hecho?'ghost':'gold'}" id="bdone">${hecho?'✓ Done for today':'I spent time with God today'}</button><button class="btn ghost" style="flex:0 0 56px" id="bshare">↗</button></div>
+  </div>
+  <div class="card"><span class="tag">What are you carrying today?</span><p class="muted" style="margin:4px 0 10px">Pick one and receive a verse and a prayer for it.</p>
+    <div class="grid">${D.carrying.slice(0,6).map(c=>`<button class="tile" onclick="carry('${c.id}')"><span class="ic">${c.icon}</span><b>${c.label}</b></button>`).join('')}</div>
+    <button class="btn ghost" style="margin-top:10px" onclick="ir('carry')">See all</button></div>
+  <div class="card list">
+    <div class="it" onclick="R.plan()"><div class="ic">📖</div><div><b>Bible in a year</b><small>Today: ${D.plan[diaIndex()%365]}</small></div></div>
+    <div class="it" onclick="R.journal()"><div class="ic">✍️</div><div><b>Prayer journal</b><small>Write your requests, mark them answered</small></div></div>
+    <div class="it" onclick="R.memory()"><div class="ic">🃏</div><div><b>Memory verses</b><small>52 verses to keep in your heart</small></div></div>
+  </div>
+  ${instalar()}`;
+  $('#bdone').onclick=()=>{const d2=S.get('done',[]);if(!d2.includes(hoyKey())){d2.push(hoyKey());S.set('done',d2);toast('Beautiful. See you tomorrow 🤍')}header();R.today()};
+  $('#bshare').onclick=()=>compartir(d.verse,d.ref);
+};
+function instalar(){if(window.matchMedia('(display-mode: standalone)').matches)return'';return`<div class="card install"><b>📲 Keep Faith Daily on your home screen</b><p class="muted" style="margin-top:4px">iPhone: tap Share → “Add to Home Screen”. Android: tap ⋮ → “Install app”.</p></div>`}
+window.carry=id=>{const c=D.carrying.find(x=>x.id===id);detalle(`<div class="card"><span class="tag">${c.icon} ${c.label}</span>${c.verses.map(v=>`<div class="verse" style="font-size:19px">“${esc(v.text)}”</div><div class="ref" style="margin-bottom:12px">${v.ref} (KJV)</div>`).join('')}<div class="prayer">🙏 ${esc(c.prayer)}</div><button class="btn ghost" style="margin-top:14px" onclick="compartir(${JSON.stringify(c.verses[0].text).replace(/"/g,'&quot;')},'${c.verses[0].ref}')">Share this verse ↗</button></div>`)};
+R.carry=()=>{$('#v-carry').innerHTML=`<div class="card"><h2>What are you carrying today?</h2><p class="muted">Whatever it is, you do not carry it alone.</p></div><div class="grid">${D.carrying.map(c=>`<button class="tile" onclick="carry('${c.id}')"><span class="ic">${c.icon}</span><b>${c.label}</b><small>${c.refs[0]}</small></button>`).join('')}</div>`};
+R.journeys=()=>{const pr=S.get('jdone',{});$('#v-journeys').innerHTML=`<div class="card"><h2>Guided journeys</h2><p class="muted">Four-week paths with a short reading, a prayer and a reflection each day.</p></div>`+D.journeys.map((j,ji)=>{const tot=j.weeks.reduce((a,w)=>a+w.days.length,0),hech=Object.keys(pr).filter(k=>k.startsWith(j.id+'|')).length;return`<div class="card list"><div class="it" onclick="journey(${ji})"><div class="ic">🧭</div><div><b>${j.title}</b><small>${j.weeks.map(w=>w.theme).join(' · ')}</small><div class="muted">${hech}/${tot} days</div></div></div></div>`}).join('')};
+window.journey=ji=>{const j=D.journeys[ji],pr=S.get('jdone',{});detalle(`<h2 class="serif" style="margin-bottom:10px">${j.title}</h2>`+j.weeks.map((w,wi)=>`<div class="card"><span class="tag">${w.week} · ${esc(w.theme)}</span><div class="list">${w.days.map((d,di)=>{const k=j.id+'|'+wi+'|'+di;return`<div class="it" onclick="jday(${ji},${wi},${di})"><div class="chk ${pr[k]?'on':''}">${pr[k]?'✓':''}</div><div><b>${esc(d.day)}</b><small>${d.acts.map(a=>esc(a.name)).join(' · ')}</small></div></div>`}).join('')}</div></div>`).join(''))};
+window.jday=(ji,wi,di)=>{const j=D.journeys[ji],d=j.weeks[wi].days[di],k=j.id+'|'+wi+'|'+di,pr=S.get('jdone',{});detalle(`<div class="card"><span class="tag">${esc(j.title)} · ${esc(j.weeks[wi].week)}</span><h2>${esc(d.day)}</h2>${d.acts.map(a=>`<div style="margin-top:14px"><b>${esc(a.name)}</b> <span class="pill">${esc(a.time)}</span><p class="muted">${esc(a.desc||'')}</p>${a.steps&&a.steps.length?`<ol style="margin:6px 0 0 20px">${a.steps.map(s=>`<li>${esc(s)}</li>`).join('')}</ol>`:''}${a.tip?`<p class="muted">💡 ${esc(a.tip)}</p>`:''}</div>`).join('')}<button class="btn gold" style="margin-top:16px" onclick="(()=>{const p=S.get('jdone',{});p['${k}']=1;S.set('jdone',p);toast('Day completed ✓');journey(${ji})})()">${pr[k]?'✓ Completed':'Mark this day complete'}</button></div>`)};
+R.library=()=>{$('#v-library').innerHTML=`
+  <div class="card"><span class="tag">Printables</span><p class="muted" style="margin:4px 0 6px">Print them or keep them on your phone.</p><div class="list">
+    ${[['🙏','31 Prayer Cards','For what you are really facing','printables/31-prayer-cards.pdf'],['🃏','52 Scripture Memory Cards','KJV, ready to cut','printables/52-scripture-cards.pdf'],['📅','Bible in a Year plan','365 days with a tracker','printables/bible-in-a-year.pdf'],['✍️','Prayer journal pages','Requests and answered prayers','printables/prayer-journal.pdf'],['🕊️','30 “I Am” identity cards','Who God says you are','printables/i-am-cards.pdf']].map(x=>`<a class="it" style="color:inherit;text-decoration:none" href="${x[3]}" target="_blank"><div class="ic">${x[0]}</div><div><b>${x[1]}</b><small>${x[2]}</small></div></a>`).join('')}
+  </div></div>
+  <div class="card"><span class="tag">Listen</span><div class="list">${D.podcasts.map((p,i)=>`<div class="it" onclick="pod(${i})"><div class="ic">🎧</div><div><b>${esc(p.title)}</b><small>${esc(p.min)}</small></div></div>`).join('')}</div></div>
+  <div class="card"><span class="tag">Read</span><div class="list">${D.articles.map((a,i)=>`<div class="it" onclick="art(${i})"><div class="ic">${a.icon}</div><div><b>${esc(a.title)}</b><small>${esc(a.desc)}</small></div></div>`).join('')}</div></div>
+  <div class="card"><span class="tag">E-book</span><div class="list">${D.ebooks.map(e=>`<a class="it" style="color:inherit;text-decoration:none" href="${e.file}" target="_blank"><div class="ic">📘</div><div><b>${esc(e.title)}</b><small>PDF</small></div></a>`).join('')}</div></div>`};
+window.art=i=>{const a=D.articles[i];detalle(`<div class="card art"><span class="tag">${esc(a.src)}</span><h2>${esc(a.title)}</h2>${a.html}</div>`)};
+window.pod=i=>{const p=D.podcasts[i];detalle(`<div class="card"><span class="tag">Podcast · ${esc(p.min)}</span><h2>${esc(p.title)}</h2><audio controls preload="none" src="${p.file}"></audio></div>`)};
+R.more=()=>{$('#v-more').innerHTML=`<div class="grid">
+  <button class="tile" onclick="R.journal()"><span class="ic">✍️</span><b>Prayer journal</b><small>Requests & answers</small></button>
+  <button class="tile" onclick="R.memory()"><span class="ic">🃏</span><b>Memory verses</b><small>52 cards</small></button>
+  <button class="tile" onclick="R.plan()"><span class="ic">📖</span><b>Bible in a year</b><small>365-day plan</small></button>
+  <button class="tile" onclick="R.quiz()"><span class="ic">🧠</span><b>Bible quiz</b><small>${D.quiz.length} questions</small></button>
+  <button class="tile" onclick="R.iam()"><span class="ic">🕊️</span><b>Who God says I am</b><small>30 truths</small></button>
+  <button class="tile" onclick="R.cards()"><span class="ic">🙏</span><b>31 prayers</b><small>For every moment</small></button>
+  </div>`};
+R.journal=()=>{const J=S.get('journal',[]);detalle(`<div class="card"><h2>Prayer journal</h2><p class="muted">Write it down. One day you will look back and see how God answered.</p><textarea id="jtx" rows="3" placeholder="Lord, today I pray for…" style="margin-top:10px"></textarea><button class="btn gold" style="margin-top:10px" id="jadd">Add prayer</button></div><div class="card list">${J.length?J.map((x,i)=>`<div class="it" onclick="jtog(${i})"><div class="chk ${x.a?'on':''}">${x.a?'✓':''}</div><div><b style="font-weight:500">${esc(x.t)}</b><small>${x.d}${x.a?' · answered '+x.a:''}</small></div></div>`).join(''):'<p class="muted">Your prayers will appear here. Tap one to mark it answered.</p>'}</div>`);$('#jadd').onclick=()=>{const t=$('#jtx').value.trim();if(!t)return;J.unshift({t,d:hoyKey()});S.set('journal',J);R.journal()}};
+window.jtog=i=>{const J=S.get('journal',[]);J[i].a=J[i].a?null:hoyKey();S.set('journal',J);if(J[i].a)toast('Praise God! 🙌');R.journal()};
+let mi=0,mf=false;R.memory=()=>{const m=D.memory[mi];detalle(`<div class="card flash" id="mflash"><span class="tag">${mi+1} / ${D.memory.length}</span>${mf?`<div class="verse">“${esc(m.text)}”</div><div class="ref">${m.ref}</div>`:`<h2 style="font-size:28px;margin-top:10px">${m.ref}</h2><p class="muted">Say it from memory, then tap to check</p>`}</div><div class="row"><button class="btn ghost" id="mprev">‹ Prev</button><button class="btn" id="mnext">Next ›</button></div>`);$('#mflash').onclick=()=>{mf=!mf;R.memory()};$('#mprev').onclick=()=>{mi=(mi-1+D.memory.length)%D.memory.length;mf=false;R.memory()};$('#mnext').onclick=()=>{mi=(mi+1)%D.memory.length;mf=false;R.memory()}};
+R.plan=()=>{const P=S.get('plan',{});const hoy=diaIndex()%365;const n=Object.keys(P).length;detalle(`<div class="card"><h2>Bible in a year</h2><p class="muted">${n} of 365 days read · start any day, skip without guilt.</p></div><div class="card list">${D.plan.map((p,i)=>`<div class="it" id="pl${i}" onclick="ptog(${i})"><div class="chk ${P[i]?'on':''}">${P[i]?'✓':''}</div><div><b style="font-weight:${i===hoy?700:500}">Day ${i+1}${i===hoy?' · today':''}</b><small>${p}</small></div></div>`).join('')}</div>`);setTimeout(()=>document.getElementById('pl'+Math.max(0,hoy-1))?.scrollIntoView(),50)};
+window.ptog=i=>{const P=S.get('plan',{});P[i]?delete P[i]:P[i]=1;S.set('plan',P);const el=document.getElementById('pl'+i).firstChild;el.classList.toggle('on');el.textContent=P[i]?'✓':''};
+let qi=null,qs=0,qn=0;R.quiz=()=>{if(qi===null){qi=Math.floor(Math.random()*D.quiz.length)}const q=D.quiz[qi];detalle(`<div class="card"><span class="tag">Bible quiz · score ${qs}/${qn}</span><h2>${esc(q.q)}</h2>${q.o.map((o,i)=>`<button class="opt" data-i="${i}">${esc(o)}</button>`).join('')}<p class="muted" id="qe" style="margin-top:8px"></p><button class="btn" id="qn" style="margin-top:10px;display:none">Next question ›</button></div>`);document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{if(b.parentNode.dataset.r)return;b.parentNode.dataset.r=1;const ok=+b.dataset.i===q.c;qn++;if(ok)qs++;b.classList.add(ok?'ok':'no');document.querySelectorAll('.opt')[q.c].classList.add('ok');$('#qe').textContent=(ok?'Correct! ':'')+(q.e||'');$('#qn').style.display='flex'});$('#qn').onclick=()=>{qi=Math.floor(Math.random()*D.quiz.length);R.quiz()}};
+R.iam=()=>detalle(`<div class="card"><h2>Who God says I am</h2><p class="muted">Read one out loud each morning.</p></div>`+D.iam.map(x=>`<div class="card"><h2 style="font-size:19px">${esc(x.t)}</h2><div class="verse" style="font-size:16px">“${esc(x.text)}”</div><div class="ref">${x.ref}</div></div>`).join(''));
+R.cards=()=>detalle(`<div class="card"><h2>31 prayers for every moment</h2><p class="muted">One for each day of the month, or for the moment you are in.</p></div>`+D.prayercards.map((x,i)=>`<div class="card"><span class="tag">${i+1} · ${esc(x.t)}</span><div class="verse" style="font-size:16px">“${esc(x.text)}”</div><div class="ref">${x.ref}</div><div class="prayer">🙏 ${esc(x.p)}</div></div>`).join(''));
+window.compartir=async(texto,ref)=>{const c=document.createElement('canvas');c.width=1080;c.height=1350;const g=c.getContext('2d');const gr=g.createLinearGradient(0,0,1080,1350);gr.addColorStop(0,'#2B1E14');gr.addColorStop(1,'#6B4A2C');g.fillStyle=gr;g.fillRect(0,0,1080,1350);g.fillStyle='#E2B862';g.font='600 34px Inter';g.textAlign='center';g.fillText('FAITH DAILY',540,140);g.fillStyle='#FBF3E4';g.font='italic 54px Lora';const pal=('“'+texto+'”').split(' ');let lin='',y=360,lines=[];for(const w of pal){const t=lin?lin+' '+w:w;if(g.measureText(t).width>880){lines.push(lin);lin=w}else lin=t}lines.push(lin);y=675-lines.length*36;for(const l of lines){g.fillText(l,540,y);y+=74}g.fillStyle='#E2B862';g.font='600 38px Inter';g.fillText(ref+' (KJV)',540,y+40);const blob=await new Promise(r=>c.toBlob(r,'image/png'));const f=new File([blob],'verse.png',{type:'image/png'});if(navigator.canShare&&navigator.canShare({files:[f]})){try{await navigator.share({files:[f],text:ref})}catch(e){}}else{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='faith-daily-verse.png';a.click()}};
+header();R.today();
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
